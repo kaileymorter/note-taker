@@ -19,7 +19,7 @@ app.get('/api/notes', (req, res) => {
     if (req.query) {
         results = filterByQuery(req.query, results)
     }
-    res.json(notes);
+    res.json(results);
 })
 
 app.listen(PORT, () => {
