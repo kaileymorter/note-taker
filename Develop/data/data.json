@@ -1,19 +1,39 @@
 {
-    "notes": [
-        {
-            "title":"Schedule",
-            "text":"Schedule social media posts for this next week.",
-            "id": "1"
-        },
-        {
-            "title":"Create SM Posts",
-            "text":"Create social media posts for the week after this next week.",
-            "id": "2"
-        },
-        {
-            "title":"Send BTWB List",
-            "text":"Send Jake a list of all the active Speal members.",
-            "id": "3"
-        }
-    ]
+  "notes": [
+    {
+      "title": "Schedule",
+      "text": "Schedule social media posts for this next week.",
+      "id": "0"
+    },
+    {
+      "title": "Create SM Posts",
+      "text": "Create social media posts for the week after this next week.",
+      "id": "1"
+    },
+    {
+      "title": "Send BTWB List",
+      "text": "Send Jake a list of all the active Speal members.",
+      "id": "2"
+    },
+    {
+      "title": "Email",
+      "text": "Respond to customer service emails",
+      "id": "3"
+    },
+    {
+      "title": "Email",
+      "text": "234",
+      "id": "4"
+    },
+    {
+      "title": "Email",
+      "text": "Email customer service emails",
+      "id": "5"
+    },
+    {
+      "title": "Email",
+      "text": "Email customer service emails",
+      "id": "6"
+    }
+  ]
 }
