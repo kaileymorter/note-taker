@@ -1,12 +1,18 @@
+//required modules
 const fs = require('fs');
 const path = require('path');
+
+//create server application
+const app = express();
+const PORT = process.env.PORT || 3001;
+
 const { notes } = require('./Develop/data/data.json')
 const express = require('express');
-const PORT = process.env.PORT || 3001;
-const app = express();
 
+//read the url or json
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static('Develop/public'));
 
 function filterByQuery(query, notesArray) {
     let filteredResults = notesArray;
@@ -28,7 +34,7 @@ function createNewNote (body, notesArray) {
     const note = body;
     notesArray.push(note);
     fs.writeFileSync(
-        path.join(__dirname, './Develop/data/data.json'),
+        path.join(__dirname, '.Develop/data/data.json'),
         JSON.stringify({notes: notesArray}, null, 2)
     )
     return note;
@@ -71,6 +77,14 @@ app.post('/api/notes', (req, res) => {
         res.json(note);
     }
 });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/index.html'));
+})
+
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
+})
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`)
