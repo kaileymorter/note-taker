@@ -30,4 +30,12 @@ router.post('/notes', (req, res) => {
     }
 });
 
+router.delete('/notes/:id', (req, res) => {  
+    for(let i = 0; i < notes.length; i++) {
+        res.send(notes[i]);
+        notes.splice(i, 1)
+        break;
+    }
+})
+
 module.exports  = router;
