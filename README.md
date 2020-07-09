@@ -18,7 +18,7 @@
   ## Usage:
   The user will visit https://stark-bastion-43404.herokuapp.com/ where they will be presented with a homepage of the application. The user will select "get started" button and will then be presented with a page to add, save, and delete notes.
   
-  <img width="1391" alt="Screen Shot 2020-07-09 at 3 28 58 PM" src="https://user-images.githubusercontent.com/62969025/87092658-11ed4000-c1f9-11ea-9d57-7bdd8cc48b71.png">
+  <img width="1393" alt="Screen Shot 2020-07-09 at 3 31 34 PM" src="https://user-images.githubusercontent.com/62969025/87092784-4eb93700-c1f9-11ea-99a6-b88f35c5fe13.png">
   
   <img width="1389" alt="Screen Shot 2020-07-09 at 3 29 15 PM" src="https://user-images.githubusercontent.com/62969025/87092662-13b70380-c1f9-11ea-853f-350a325d93c7.png">
   
